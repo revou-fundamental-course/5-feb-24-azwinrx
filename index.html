@@ -12,7 +12,7 @@
 <body>
     <header id="navigation-bar">
         <img src="assets/Logo.ico" id="Logo">
-        <label class="judul">Kalkulator Suhu</label>
+        <label class="nama-web">Kalkulator Suhu</label>
         <nav id="navigation">
             <a href="#lihat-rumus">lihat rumus</a>
             <a href="#lihat-hasil">lihat hasil</a>
@@ -21,10 +21,18 @@
 
 
     <main class="main-content">
+        <!-- Pengertian -->
+        <section id = "Pengertian"></section>
+        <h1 class="judul"><b>Pengertian Suhu</b></h1>
+            <p1>Apa itu suhu? Setiap manusia dapat merasakan panas dan dingin sebuah benda karena adanya suhu. Suhu benda yang dingin dikatakan lebih rendah dibanding suhu benda yang panas. Sebaliknya, jika benda tersebut panas, artinya memiliki suhu yang lebih tinggi dari benda lain yang dingin. Fahrenheit dan Celcius dipakai untuk mengukur suhu. 
+                <br><br>
+                Alat untuk mengukur suhu adalah termometer. Ada beberapa jenis derajat suhu dalam termometer seperti Reamur, Fahrenheit, Kelvin, dan Celcius. Keempat jenis kala suhu ini dapat dikonversi menggunakan rumus. Misalnya rumus fahrenheit ke celcius dikurangi angka 32. Sedangkan konversi Celcius ke Fahrenheit mengurangi Suhu F dikurangi 32.
+            </p1>
+            <hr>
+
         <!-- info rumus-->
         <section id="lihat-rumus">
-            <h1><b>Cara Konversi Dari Celcius (&#8451;) ke Fahrenheit (&#8457;)</b></h1>
-            <hr>
+        <h1 class="judul"><b>Rumus Konversi Suhu Dari Celcius (&#8451;) ke Fahrenheit (&#8457;)</b></h1>
             <p1>Suhu S dalam derajat Fahrenheit (&#8457;) sama dengan suhu S dalam derajat Celcius (&#8451;) kali <b>9/5</b> tambah <b>32</b></p1>
             <br>
             <p1>S<sub>(&#8457;)</sub> = &#40;S<sub>(&#8451;)</sub> &#215; 9/5 &#41; &#43; 32</p1>
@@ -35,30 +43,37 @@
             <hr>
         </section>
              
-
+        <!--converter suhu-->
+        <section id = "konverter"></section>
+        <h1 class="judul"><b>Konverter Suhu Celcius (&#8451;) ke Fahrenheit (&#8457;)</b></h1>
+            <p1>Apa itu suhu? Setiap manusia dapat merasakan panas dan dingin sebuah benda karena adanya suhu. Suhu benda yang dingin dikatakan lebih rendah dibanding suhu benda yang panas. Sebaliknya, jika benda tersebut panas, artinya memiliki suhu yang lebih tinggi dari benda lain yang dingin. Fahrenheit dan Celcius dipakai untuk mengukur suhu. 
+                <br><br>
+                Alat untuk mengukur suhu adalah termometer. Ada beberapa jenis derajat suhu dalam termometer seperti Reamur, Fahrenheit, Kelvin, dan Celcius. Keempat jenis kala suhu ini dapat dikonversi menggunakan rumus. Misalnya rumus fahrenheit ke celcius dikurangi angka 32. Sedangkan konversi Celcius ke Fahrenheit mengurangi Suhu F dikurangi 32.
+            </p1>
             <!-- Input -->
-            <div class="input-section">
-                <p>Masukkan suhu derajat celcius (&#8451;) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&#8457;)</p>
-                <label for="input-field">Celcius (&#8451;) :</label>
-                <input type="number" class="input-field">
-            </div>
-            <button class="my-button">Konversi</button>
-            <button class="my-button">Reset</button>
-            <button class="my-button">Reverse</button>
 
-            <section id="lihat-hasil">
-            <!-- Output Fahrenheit -->
-                <div class="output-Fahrenheit">
-                    <label for="field-Fahrenheit">Fahrenheit (&#8457;) : </label>
-                    <input type="number" class="field-Fahrenheit" readonly>
-                    </div>
-
-                <!-- Output Cara -->
-                <div class="output-Cara">
-                        <label for="field-Cara">Cara Kalkulasi :</label>
-                        <input type="number" class="field-Cara" readonly> 
+                <div class="input-section">
+                    <p>Masukkan suhu derajat celcius (&#8451;) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&#8457;)</p>
+                    <label for="input">Celcius (&#8451;) :</label>
+                    <input type="number" name="input" id="input" class="input"></input>
                 </div>
-            </section>  
+                <button class="my-button" onclick="convert()">Konversi</button>
+                <button class="my-button" onclick="reset()">Reset</button>
+                <button class="my-button" onclick="reverse()">Reverse</button>
+
+                <section id="lihat-hasil">
+            <!-- Output Fahrenheit -->
+                    <div class="output-Fahrenheit">
+                        <label for="hasil">Fahrenheit (&#8457;) : </label>
+                        <input name="hasil" id="hasil" class="hasil" readonly></input>
+                        </div>
+
+            <!-- Output Cara -->
+                    <div class="output-Cara">
+                            <label for="cara">Cara Kalkulasi :</label>
+                            <input name="cara" id="cara" class="cara" readonly></input> 
+                    </div>
+                </section>  
     </main>
 
 
