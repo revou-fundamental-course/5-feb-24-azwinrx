@@ -42,6 +42,11 @@ function reset() {
 
 //Reverse
 function reverse() {
+    if (input === "" || isNaN(input)) {
+        alert("WARNING : Input Tidak Boleh Kosong Dan Harus Berupa Angka atau Nilai");
+        return;
+    }
+
     var farenheit = parseFloat(document.getElementById("hasil").value);
     var celcius = (farenheit - 32) / (9/5) ;
     document.getElementById("input").value = celcius;
