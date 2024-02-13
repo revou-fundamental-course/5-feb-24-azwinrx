@@ -5,22 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konversi Suhu</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="navigation-bar">
         <img src="assets/Logo.ico" id="Logo">
         <nav id="navigation">
-            <a href="">Lihat Hasil</a>
-            <a href="">Lihat Rumus</a>
+            <a href="">lihat hasil</a>
+            <a href="">lihat rumus</a>
         </nav>
     </header>
-    <div class="input-section">
-        <p>Masukkan suhu derajat celcius (&#8451;) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit </p>
-        <label for="input-field">Celcius</label>
-        <input type="number" class="input-field">
-    </div>
-    <button class="my-button">Konversi</button>
-    <button class="my-button">Reset</button>
-    <button class="my-button">Reverse</button>
+    <main class="main-content">
+        <!-- info rumus-->
+        <div class="Information">
+            <h1>Cara Konversi Dari Celcius (&#8451;) ke Fahrenheit (&#8457;)</h1>
+            <hr>
+            <p1>Suhu S dalam derajat Fahrenheit (&#8457;) sama dengan suhu S dalam derajat Celcius (&#8451;) kali <b>9/5</b> tambah <b>32</b></p1>
+            <br>
+            <p1>S<sub>(&#8457;)</sub> = &#40;S<sub>(&#8451;)</sub> &#215; 9/5 &#41; &#43; 32</p1>
+            <br>
+            <p1>atau</p1>
+            <br>
+            <p1>S<sub>(&#8457;)</sub> = &#40;S<sub>(&#8451;)</sub> &#215; 1.8 &#41; &#43; 32</p1>
+        </div>
+        <hr>
+
+
+        <!-- Input -->
+        <div class="input-section">
+            <p>Masukkan suhu derajat celcius (&#8451;) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&#8457;)</p>
+            <label for="input-field">Celcius (&#8451;) :</label>
+            <input type="number" class="input-field">
+        </div>
+        <button class="my-button">Konversi</button>
+        <button class="my-button">Reset</button>
+        <button class="my-button">Reverse</button>
+
+
+        <!-- Output Fahrenheit -->
+        <div class="output-Fahrenheit">
+            <label for="field-Fahrenheit">Fahrenheit (&#8457;) : </label>
+            <input type="number" class="field-Fahrenheit">
+        </div>
+
+        <!-- Output Cara -->
+        <div class="output-Cara">
+            <label for="field-Cara">Cara Kalkulasi :</label>
+            <input type="number" class="field-Cara"> 
+        </div>
+    </main>
 </body>
 </html>
