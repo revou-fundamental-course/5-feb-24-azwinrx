@@ -12,15 +12,18 @@
 <body>
     <header id="navigation-bar">
         <img src="assets/Logo.ico" id="Logo">
+        <label class="judul">Kalkulator Suhu</label>
         <nav id="navigation">
-            <a href="">lihat hasil</a>
-            <a href="">lihat rumus</a>
+            <a href="#lihat-rumus">lihat rumus</a>
+            <a href="#lihat-hasil">lihat hasil</a>
         </nav>
     </header>
+
+
     <main class="main-content">
         <!-- info rumus-->
-        <div class="Information">
-            <h1>Cara Konversi Dari Celcius (&#8451;) ke Fahrenheit (&#8457;)</h1>
+        <section id="lihat-rumus">
+            <h1><b>Cara Konversi Dari Celcius (&#8451;) ke Fahrenheit (&#8457;)</b></h1>
             <hr>
             <p1>Suhu S dalam derajat Fahrenheit (&#8457;) sama dengan suhu S dalam derajat Celcius (&#8451;) kali <b>9/5</b> tambah <b>32</b></p1>
             <br>
@@ -29,32 +32,48 @@
             <p1>atau</p1>
             <br>
             <p1>S<sub>(&#8457;)</sub> = &#40;S<sub>(&#8451;)</sub> &#215; 1.8 &#41; &#43; 32</p1>
-        </div>
-        <hr>
+            <hr>
+        </section>
+             
 
+            <!-- Input -->
+            <div class="input-section">
+                <p>Masukkan suhu derajat celcius (&#8451;) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&#8457;)</p>
+                <label for="input-field">Celcius (&#8451;) :</label>
+                <input type="number" class="input-field">
+            </div>
+            <button class="my-button">Konversi</button>
+            <button class="my-button">Reset</button>
+            <button class="my-button">Reverse</button>
 
-        <!-- Input -->
-        <div class="input-section">
-            <p>Masukkan suhu derajat celcius (&#8451;) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&#8457;)</p>
-            <label for="input-field">Celcius (&#8451;) :</label>
-            <input type="number" class="input-field">
-        </div>
-        <button class="my-button">Konversi</button>
-        <button class="my-button">Reset</button>
-        <button class="my-button">Reverse</button>
+            <section id="lihat-hasil">
+            <!-- Output Fahrenheit -->
+                <div class="output-Fahrenheit">
+                    <label for="field-Fahrenheit">Fahrenheit (&#8457;) : </label>
+                    <input type="number" class="field-Fahrenheit" readonly>
+                    </div>
 
-
-        <!-- Output Fahrenheit -->
-        <div class="output-Fahrenheit">
-            <label for="field-Fahrenheit">Fahrenheit (&#8457;) : </label>
-            <input type="number" class="field-Fahrenheit">
-        </div>
-
-        <!-- Output Cara -->
-        <div class="output-Cara">
-            <label for="field-Cara">Cara Kalkulasi :</label>
-            <input type="number" class="field-Cara"> 
-        </div>
+                <!-- Output Cara -->
+                <div class="output-Cara">
+                        <label for="field-Cara">Cara Kalkulasi :</label>
+                        <input type="number" class="field-Cara" readonly> 
+                </div>
+            </section>  
     </main>
+
+
+    <section id="kontak-saya">
+        <footer class="footer">
+            <div class="created-by">Created By :</div>
+            <div class="name">Muhammad Azwin Rifai</div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/zwingain/" target=”_blank”><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-rifai-46b714250/" target=”_blank”><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a href="https://www.facebook.com/mazwin.r.1" target=”_blank”><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+            </div>
+        </footer>
+    </section>
 </body>
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/dcd52fb709.js" crossorigin="anonymous"></script>
 </html>
