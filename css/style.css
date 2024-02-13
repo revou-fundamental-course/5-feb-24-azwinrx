@@ -16,6 +16,7 @@ body{
 
 .main-content{
  margin: 50px;
+ color: #002a4d;
 }
 
 hr{
@@ -64,6 +65,8 @@ hr{
 }
 
 #Logo {
+    display: flex;
+    align-items:center;
     height: 30px;
     width: 30px;
     margin-top: 10px;
@@ -82,7 +85,9 @@ hr{
 }
 
 #navigation{
+
     display: flex;
+    justify-content: center;
     position: sticky;
     
 
