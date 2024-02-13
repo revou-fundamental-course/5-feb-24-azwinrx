@@ -19,3 +19,32 @@ window.onscroll = () => {
     })
 }
 
+//Konversi
+function convert() {
+    var input = document.getElementById("input").value.trim();
+    if (input === "" || isNaN(input)) {
+        alert("WARNING : Input Tidak Boleh Kosong Dan Harus Berupa Angka atau Nilai");
+        return;
+    }
+
+    var celcius = parseFloat(document.getElementById("input").value);
+    var farenheit = (celcius * (9/5)) + 32;
+    document.getElementById("hasil").value = farenheit;
+    document.getElementById("cara").value = `${celcius} °C x (9/5) + 32 = ${farenheit} °F`;
+}
+
+//reset
+function reset() {
+    document.getElementById("input").value = "";
+    document.getElementById("hasil").value = "";
+    document.getElementById("cara").value = "";
+}
+
+//Reverse
+function reverse() {
+    var farenheit = parseFloat(document.getElementById("hasil").value);
+    var celcius = (farenheit - 32) / (9/5) ;
+    document.getElementById("input").value = celcius;
+    document.getElementById("cara").value = `(${farenheit} °F - 32) / (9/5) = ${celcius} °C`;
+}
+
